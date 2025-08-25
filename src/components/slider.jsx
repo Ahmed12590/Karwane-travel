@@ -2,6 +2,9 @@ import { useEffect, useRef } from "react";
 import "./slider.css";
 import butterfly from '../assets/butterfly1.jpeg' 
 import first from '../assets/first-image.jpg' 
+import cow from '../assets/cow.jpg' 
+import tiger from '../assets/tiger.jpg' 
+import elephent from '../assets/elephent.jpg' 
 
 
 
@@ -91,12 +94,12 @@ export default function Carousel() {
           </div>
         </div>
 
-        <div className="item" style={{ backgroundImage: `url(${butterfly})` }}
+        <div className="item" style={{ backgroundImage: `url(${cow})` }}
 >
           <div className="content">
-            <div className="title">SLIDER</div>
-            <div className="name">OWL</div>
-            <div className="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
+            <div className="title">Make Every  </div>
+            <div className="name">Trip Memorable</div>
+            <div className="des">Discover Bangkok, Dubai, Turkey & more with our customized travel deals.</div>
             <div className="btn">
               <button>See More</button>
               <button>Subscribe</button>
@@ -104,7 +107,7 @@ export default function Carousel() {
           </div>
         </div>
 
-        <div className="item" style={{ backgroundImage: `url(${butterfly})` }}
+        <div className="item" style={{ backgroundImage: `url(${tiger})` }}
 >
           <div className="content">
             <div className="title">SLIDER</div>
@@ -118,7 +121,7 @@ export default function Carousel() {
         </div>
 
         {/* baqi slides bhi isi pattern par — same as your HTML */}
-        <div className="item" style={{ backgroundImage: `url(${butterfly})` }}
+        <div className="item" style={{ backgroundImage: `url(${elephent})` }}
 >
           <div className="content">
             <div className="title">SLIDER</div>

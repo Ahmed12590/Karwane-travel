@@ -55,7 +55,7 @@
 .list .item:nth-child(2) .content{ display: block }
 
 .content .title{
-  font-size: 100px;
+  font-size: 70px;
   text-transform: uppercase;
   color: #FCCA06;
   font-weight: bold;
@@ -64,7 +64,7 @@
   animation: animate 1s ease-in-out .3s 1 forwards;
 }
 .content .name{
-  font-size: 100px;
+  font-size: 50px;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 1;
