@@ -1,7 +1,21 @@
-/* ===== Header Styles ===== */
+/* Reset browser + Vite defaults */
+html, body, #root { margin: 0; padding: 0; }
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+/* Full-width app wrapper */
+#root {
+  max-width: none;   /* or 100% */
+  width: 100%;
+  margin: 0;
+  padding: 0;        /* removes the white gap */
+  text-align: initial; /* optional: component per text-align set karein */
+}
+
 :root {
   --bg: rgba(255, 255, 255, 0.75);
-  --text: #0f172a;      /* slate-900 */
+  --text: #000000;      /* slate-900 */
   --muted: #475569;     /* slate-600 */
   --accent: #0ea5e9;    /* sky-500 */
   --border: rgba(15, 23, 42, 0.08);
@@ -153,7 +167,7 @@
 /* header */
 .section__sub-title{
   font-size: 20px;
-  color: #1b2c52;
+  color: var(--text);
   opacity: .75;
   text-align: center;
   margin: 0;
