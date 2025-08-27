@@ -5,7 +5,16 @@ import Carousel from "../components/slider";
 // apne assets ke exact naam/path use karein
 import cameraIcon from "../assets/icon-camera.png";
 import travelicon from "../assets/icon-1.png";
+import backpartner from "../assets/partners-bg.png";
+import partnerlogo from "../assets/partner-logo.png";
 
+const partners = [
+  partnerlogo,
+  partnerlogo,
+  partnerlogo,
+  partnerlogo,
+  partnerlogo,
+];
 
 const categories = [
   { title: "City Tours", count: "10 Tours+" },
@@ -21,8 +30,9 @@ export default function Home() {
     <main>
       <Carousel />
 
-      {/* CATEGORY SECTION */}
-      <section className="category-section"> {/* note: correct spelling */}
+      <section className="category-section">
+        {" "}
+        {/* note: correct spelling */}
         <div className="container">
           <div className="category-header">
             <div className="category__shap-icon" aria-hidden="true">
@@ -46,7 +56,27 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* /CATEGORY SECTION */}
+
+      <section
+        className="partners__section"
+        style={{ backgroundImage: `url(${backpartner})` }}
+      >
+        <div className="partners__inner">
+          <h4 className="partners__title">Our trusted partners</h4>
+
+          <div className="partner-images">
+            {partners.map((logo, i) => (
+              <img
+                className="partner-logo"
+                src={logo}
+                alt={`Partner ${i + 1}`}
+                key={i}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+      
     </main>
   );
 }
