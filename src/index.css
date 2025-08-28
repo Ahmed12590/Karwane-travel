@@ -1,4 +1,4 @@
-/* Reset browser + Vite defaults */
+
 html,
 body,
 #root {
@@ -16,19 +16,17 @@ body,
   max-width: none; /* or 100% */
   width: 100%;
   margin: 0;
-  padding: 0; /* removes the white gap */
+  padding: 0; 
   text-align: initial; /* optional: component per text-align set karein */
 }
 
 :root {
   --bg: rgba(255, 255, 255, 0.75);
-  --text: #000000; /* slate-900 */
-  --muted: #475569; /* slate-600 */
-  --accent: #0ea5e9; /* sky-500 */
+  --text: #000000; 
+  --muted: #475569; 
   --border: rgba(15, 23, 42, 0.08);
-  /* brand colors */
-  --brand-blue: #134d9f; /* Blue Color: 134D9F */
-  --brand-yellow: #fcca06; /* Yellow Color: FCCA06 */
+  --brand-blue: #134d9f; 
+  --brand-yellow: #fcca06; 
 }
 
 .site-header {
@@ -77,7 +75,7 @@ body,
   color: var(--accent);
 }
 
-/* Nav links */
+
 .nav {
   display: flex;
   align-items: center;
@@ -374,8 +372,8 @@ body,
 
 .btn-secondary{
   background: #fff;
-  color: var(--primary, #134D9F);
-  border: 2px solid var(--primary, #134D9F);
+  color: var(--brand-blue);
+  border: 2px solid var(--brand-blue);
 }
 .btn-secondary:hover{
   background: var(--brand-yellow);
