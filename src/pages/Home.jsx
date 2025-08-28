@@ -7,6 +7,7 @@ import cameraIcon from "../assets/icon-camera.png";
 import travelicon from "../assets/icon-1.png";
 import backpartner from "../assets/partners-bg.png";
 import partnerlogo from "../assets/partner-logo.png";
+import travelback from "../assets/travel-bg.png";
 
 const partners = [
   partnerlogo,
@@ -23,6 +24,13 @@ const categories = [
   { title: "Adventure", count: "10 Tours+" },
   { title: "Food", count: "10 Tours+" },
   { title: "hiking", count: "10 Tours+" },
+];
+
+const features = [
+  { title: "Wildlife Tours" },
+  { title: "Paragliding Tours" },
+  { title: "Adventure Tours" },
+  { title: "Beaches Tours" },
 ];
 
 export default function Home() {
@@ -58,6 +66,37 @@ export default function Home() {
       </section>
 
       <section
+        className="Travel-section"
+        style={{ backgroundImage: `url(${travelback})` }}
+      >
+        <div className="travel__second-sec">
+          {/* LEFT */}
+          <div className="travel-heading">
+            <p className="eyebrow">Are you ready to travel?</p>
+            <h2 className="hero-title">
+              Tevily is a World Leading Online
+              <br /> Tour Booking Platform
+            </h2>
+            <button className="btn btn-outline">Contact Us</button>
+          </div>
+
+          {/* RIGHT */}
+          <div className="travel__four-box">
+            <div className="feature-grid">
+              {features.map((f) => (
+                <div className="feature-card" key={f.title}>
+                  <div className="category-icon">
+                    <img src={travelicon} alt="" />
+                  </div>
+                  <h5>{f.title}</h5>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
         className="partners__section"
         style={{ backgroundImage: `url(${backpartner})` }}
       >
@@ -76,7 +115,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
     </main>
   );
 }
