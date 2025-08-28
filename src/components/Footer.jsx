@@ -3,7 +3,7 @@ export default function Footer() {
   return (
     <footer className="site-footer" id="contact">
       <div className="container">
-        <p>© {year} All Rights Reserved — <strong>Karwan-e-Mikail</strong></p>
+        <p>© {year} All Rights Reserved — <strong>Karwan-e-Mikaeel</strong></p>
          <p>Developed by  <a href="https://theahmedportfolio.vercel.app/">Ahmed</a></p>
         
       </div>
