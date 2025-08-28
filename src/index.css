@@ -287,12 +287,119 @@ body,
   }
 }
 
+
+/* ////////////// about us section ///////////// */
+
+
+
+.about__section{
+  padding: clamp(48px, 7vw, 96px) 0;
+  background: #fff;
+}
+
+
+.about__inner{
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(24px, 4vw, 56px);
+  align-items: center;
+}
+
+
+.about__media{ position: relative; }
+.about__media img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+  box-shadow: 0 16px 40px rgba(16,24,40,.16);
+  object-fit: cover;
+}
+
+/* small badge on image */
+.about__badge{
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  background: var(--secondary, #FCCA06);
+  color: #0f172a;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+.about__eyebrow{
+  color: var(--text);
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+.about__title{
+  margin: 0 0 12px;
+  font-size: clamp(26px, 4.2vw, 40px);
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--brand-blue);
+}
+.about__text{
+  margin: 0 0 18px;
+  color: var(--text);
+  font-size: 16px;
+}
+
+
+.about__actions{ display: flex; gap: 12px; flex-wrap: wrap; }
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease;
+}
+.btn:active{ transform: translateY(1px); }
+
+/* primary and secondary use your vars */
+.btn-primary{
+  background: var(--brand-blue);
+  color: var(--on-primary, #fff);
+  border: 2px solid var(--brand-blue);
+}
+
+
+.btn-secondary{
+  background: #fff;
+  color: var(--primary, #134D9F);
+  border: 2px solid var(--primary, #134D9F);
+}
+.btn-secondary:hover{
+  background: var(--brand-yellow);
+  border-color: var(--brand-yellow);
+  color: #0f172a;
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .about__inner{ grid-template-columns: 1fr; }
+  .about__media{ order: -1; } 
+}
+
+
+
+
+
+
 .partners__section {
   background-color: var(--brand-blue);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: clamp(40px, 6vw, 80px) 0;
+  padding: clamp(40px, 4vw, 80px) 0;
   color: #fff;
 }
 .partners__inner {
@@ -373,6 +480,7 @@ body,
 /* LEFT column */
 .eyebrow {
   color: var(--brand-yellow);
+  font-size: 34px;
   font-weight: 700;
   font-style: italic;
   margin: 0 0 10px;
