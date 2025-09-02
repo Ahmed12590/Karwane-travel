@@ -1,4 +1,5 @@
 import Carousel from "../components/slider";
+import CountUp from "../components/CountUp";
 import cameraIcon from "../assets/icon-camera.png";
 import travelicon from "../assets/icon-1.png";
 import backpartner from "../assets/partners-bg.png";
@@ -93,6 +94,8 @@ export default function Home() {
 
 
 
+
+
       <section
         className="Travel-section"
         style={{ backgroundImage: `url(${travelback})` }}
@@ -143,6 +146,33 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+<section className="stats-section">
+  <div className="container">
+    <div className="stats">
+      <div className="stat">
+        <CountUp end={120} duration={1600} suffix="+" className="stat__number" />
+        <span className="stat__label">Total Destination</span>
+      </div>
+
+      <div className="stat">
+        <CountUp end={500} duration={1600} suffix="+" className="stat__number" />
+        <span className="stat__label">Travel Packages</span>
+      </div>
+
+      <div className="stat">
+        <CountUp end={12} duration={1600} suffix="k+" className="stat__number" />
+        <span className="stat__label">Total Travelers</span>
+      </div>
+
+      <div className="stat">
+        <CountUp end={7} duration={1600} suffix="k+" className="stat__number" />
+        <span className="stat__label">Positive Reviews</span>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
   );
 }

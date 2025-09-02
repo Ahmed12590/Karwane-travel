@@ -573,6 +573,60 @@ body,
   }
 }
 
+
+
+
+
+
+
+
+
+
+/* width-limited, centered wrapper */
+.container{
+  width: min(1200px, 92%);
+  margin-inline: auto;
+}
+
+/* section spacing (optional) */
+.stats-section{
+  padding-block: clamp(16px, 4vw, 32px);
+}
+
+/* your counters layout */
+.stats{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap: clamp(16px, 5vw, 48px);
+}
+
+.stat{ display:flex; align-items:center; gap:10px; }
+
+.stat__number{
+  font-size: clamp(28px, 6vw, 48px);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+  color:#111;
+}
+
+.stat__label{
+  color: var(--brand-blue, #134D9F);
+  font-weight:700;
+  white-space: nowrap;
+}
+
+/* small screens: stack nicely */
+@media (max-width: 640px){
+  .stats{ justify-content:flex-start; }
+}
+
+
+
+
+
 /* //////////////////////////// footer css ////////////////////////////// */
 
 .site-footer {
