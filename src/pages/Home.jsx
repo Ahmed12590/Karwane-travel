@@ -4,7 +4,7 @@ import travelicon from "../assets/icon-1.png";
 import backpartner from "../assets/partners-bg.png";
 import partnerlogo from "../assets/partner-logo.png";
 import travelback from "../assets/travel-bg.png";
-import about from "../assets/about.png";
+import about from "../assets/londoneye.jpg";
 
 const partners = [
   partnerlogo,
