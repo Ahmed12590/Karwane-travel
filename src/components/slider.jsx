@@ -1,10 +1,9 @@
 import { useEffect, useRef } from "react";
 import "./slider.css";
-import butterfly from '../assets/butterfly1.jpeg' 
-import first from '../assets/first-image.jpg' 
-import cow from '../assets/cow.jpg' 
-import tiger from '../assets/tiger.jpg' 
-import elephent from '../assets/elephent.jpg' 
+import cow from '../assets/first-slider.png' 
+import tiger from '../assets/second.png' 
+import elephent from '../assets/third.png' 
+import first from '../assets/fourth.png' 
 
 
 
@@ -134,7 +133,7 @@ export default function Carousel() {
           </div>
         </div>
 
-        <div className="item" style={{ backgroundImage: `url(${butterfly})` }}
+        <div className="item" style={{ backgroundImage: `url(${elephent})` }}
 >
           <div className="content">
             <div className="title">SLIDER</div>
