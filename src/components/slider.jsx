@@ -1,9 +1,10 @@
 import { useEffect, useRef } from "react";
 import "./slider.css";
-import cow from '../assets/first-slider.png' 
-import tiger from '../assets/second.png' 
+import cow from '../assets/londonback.jpg' 
+import tiger from '../assets/Istanbul.jpg' 
 import elephent from '../assets/third.png' 
-import first from '../assets/fourth.png' 
+import london from '../assets/london.jpg' 
+import first from '../assets/Angkor.jpg' 
 
 
 
@@ -120,7 +121,7 @@ export default function Carousel() {
         </div>
 
         {/* baqi slides bhi isi pattern par — same as your HTML */}
-        <div className="item" style={{ backgroundImage: `url(${elephent})` }}
+        <div className="item" style={{ backgroundImage: `url(${london})` }}
 >
           <div className="content">
             <div className="title">SLIDER</div>
