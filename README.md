@@ -1,10 +1,9 @@
 # TravelSite
 
-> A modern travel booking UI built with React + Vite. Smooth animations (GSAP + Lenis), clean components, and responsive layout.
+> A modern travel booking UI built with React + Vite. Smooth animations (Lenis), clean components, and responsive layout.
 
 ## Tech Stack
-- React, Vite, React Router  
-- GSAP + ScrollTrigger, Lenis  
+- React, Vite, React Router   
 - CSS Modules / App.css  
 - ESLint + Prettier
 
