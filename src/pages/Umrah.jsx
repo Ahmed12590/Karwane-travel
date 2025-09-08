@@ -44,7 +44,7 @@ const Umrah = () => {
               thousands of Umrah pilgrims from Pakistan and abroad.
             </p>
             <p>
-              Call/WhatsApp at <strong>+92-3111-223-555</strong> right now to
+              Call/WhatsApp at <strong>+92-3174723764</strong> right now to
               start your Umrah planning:
             </p>
           </div>
