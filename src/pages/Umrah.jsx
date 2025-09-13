@@ -45,7 +45,7 @@ const Umrah = () => {
             </p>
             <p>
               Call/WhatsApp at <strong>+92-3174723764</strong> right now to
-              start your Umrah planning:
+              start your Umrah planning
             </p>
           </div>
 
