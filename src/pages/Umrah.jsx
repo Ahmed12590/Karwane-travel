@@ -66,7 +66,7 @@ const Umrah = () => {
           <p className="umrah__lead">
             We take pride in being a leader of the Umrah services to our B2B and
             B2C clients in Pakistan. You can either buy a full package from us
-            or get any partial services as per your requirement.
+            or get any partial services as per your requirement
           </p>
 
           <div className="umrah-services">
