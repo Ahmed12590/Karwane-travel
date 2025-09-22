@@ -66,7 +66,7 @@ export default function Home() {
           {/* LEFT: image */}
           <div className="about__media">
             <img src={about} alt="About us" />
-            <span className="about__badge">Since 2015</span>
+            <span className="about__badge">Since 2016</span>
           </div>
 
           {/* RIGHT: content */}
