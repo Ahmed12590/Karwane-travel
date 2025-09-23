@@ -103,7 +103,9 @@ export default function Home() {
               Tevily is a World Leading Online
               <br /> Tour Booking Platform
             </h2>
-            <button className="btn btn-outline">Contact Us</button>
+            <a href="/contact">
+              <button className="btn btn-outline">Contact Us</button>{" "}
+            </a>
           </div>
 
           {/* RIGHT */}
