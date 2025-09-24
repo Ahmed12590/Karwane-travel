@@ -107,9 +107,7 @@ body,
   outline-offset: 2px;
 }
 
-/* Active state
-   React Router v6 sets aria-current="page" on active NavLink.
-   If you also add an "active" class manually, it is handled below too. */
+
 .nav a[aria-current="page"],
 .nav a.active {
   color: var(--text);
