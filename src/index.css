@@ -772,7 +772,7 @@ body,
 
 .site-footer p {
   margin: 0;
-  color: var(--text);
+  color: black;
   font-weight: 600;
 }
 
