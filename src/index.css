@@ -23,7 +23,7 @@ body,
 :root {
   --bg: rgba(255, 255, 255, 0.75);
   --text: #000000; 
-  --muted: #475569; 
+  --muted: #1c1b1b; 
   --border: rgba(15, 23, 42, 0.08);
   --brand-blue: #134d9f; 
   --brand-yellow: #fcca06; 
@@ -89,7 +89,7 @@ body,
   align-items: center;
   padding: 0.5rem 0.75rem;
   border-radius: 9999px;
-  color: var(--muted);
+  color: var(--brand-blue);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
@@ -172,7 +172,7 @@ body,
 /* header */
 .section__sub-title {
   font-size: 20px;
-  color: var(--text);
+  color: var(--brand-yellow);
   opacity: 0.75;
   text-align: center;
   margin: 0;
@@ -328,7 +328,7 @@ body,
 
 
 .about__eyebrow{
-  color: var(--text);
+  color: var(--brand-yellow);
   font-size: 40px;
   font-weight: 700;
   margin: 0 0 6px;
@@ -342,7 +342,7 @@ body,
 }
 .about__text{
   margin: 0 0 18px;
-  color: var(--text);
+  color:black;
   font-size: 16px;
 }
 
