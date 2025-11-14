@@ -1,0 +1,80 @@
+.contact-form {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0b3a5d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.field input,
+.field textarea {
+  padding: 12px 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.15);
+}
+
+textarea {
+  resize: none;
+  min-height: 110px;
+}
+
+.submit-btn {
+  padding: 12px;
+  border: none;
+  background: #0077b6;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #005f8b;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 20px;
+  }
+}
