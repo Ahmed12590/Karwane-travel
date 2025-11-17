@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import "./slider.css";
-import cow from '../assets/londonback.jpg' 
-import tiger from '../assets/Istanbul.jpg' 
-import elephent from '../assets/third.png' 
-import london from '../assets/london.jpg' 
-import first from '../assets/Angkor.jpg' 
+import cow from '../assets/londonback.jpg'
+import tiger from '../assets/Istanbul.jpg'
+import elephent from '../assets/third.png'
+import london from '../assets/london.jpg'
+import first from '../assets/Angkor.jpg'
 
 
 
@@ -40,10 +40,10 @@ export default function Carousel() {
     if (!items.length) return;
 
     if (type === "next") {
-      list.appendChild(items[0]);                 // first → last
+      list.appendChild(items[0]);
       carousel.classList.add("next");
     } else {
-      list.prepend(items[items.length - 1]);      // last → first
+      list.prepend(items[items.length - 1]);
       carousel.classList.add("prev");
     }
 
@@ -74,7 +74,7 @@ export default function Carousel() {
       window.clearTimeout(showSlider._tid);
       window.clearTimeout(showSlider._autoTid);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   return (
@@ -82,7 +82,7 @@ export default function Carousel() {
       <div className="list" ref={listRef}>
         {/* Slides: same structure you shared, now as JSX */}
         <div className="item" style={{ backgroundImage: `url(${first})` }}
->
+        >
           <div className="content">
             <div className="title">SLIDER</div>
             <div className="name">EAGLE</div>
@@ -95,7 +95,7 @@ export default function Carousel() {
         </div>
 
         <div className="item" style={{ backgroundImage: `url(${cow})` }}
->
+        >
           <div className="content">
             <div className="title">Make Every  </div>
             <div className="name">Trip Memorable</div>
@@ -108,7 +108,7 @@ export default function Carousel() {
         </div>
 
         <div className="item" style={{ backgroundImage: `url(${tiger})` }}
->
+        >
           <div className="content">
             <div className="title">SLIDER</div>
             <div className="name">CROW</div>
@@ -122,7 +122,7 @@ export default function Carousel() {
 
         {/* baqi slides bhi isi pattern par — same as your HTML */}
         <div className="item" style={{ backgroundImage: `url(${london})` }}
->
+        >
           <div className="content">
             <div className="title">SLIDER</div>
             <div className="name">BUTTERFLY</div>
@@ -135,7 +135,7 @@ export default function Carousel() {
         </div>
 
         <div className="item" style={{ backgroundImage: `url(${elephent})` }}
->
+        >
           <div className="content">
             <div className="title">SLIDER</div>
             <div className="name">OWL</div>
