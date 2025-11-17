@@ -1,8 +1,15 @@
 import about from "../assets/londoneye.jpg";
+import { Banner } from "../components/Banner";
+import bannerImage from "../assets/main-banner.jpg";
+
+
 
 export const About = () => {
     return (
         <main>
+
+            <Banner title="About Us" backgroundImage={bannerImage} />
+
             <section className="about__section">
                 <div className="container about__inner">
                     {/* LEFT: image */}

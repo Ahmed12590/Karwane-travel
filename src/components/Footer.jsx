@@ -6,6 +6,9 @@ export default function Footer() {
         <p>© {year} All Rights Reserved — <strong>Karwan-e-Mikaeel</strong></p>
          <p>Developed by  <a href="https://theahmedportfolio.vercel.app/">Ahmed</a></p>
         
+
+
+        
       </div>
     </footer>
   )

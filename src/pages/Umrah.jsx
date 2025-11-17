@@ -3,6 +3,8 @@ import bedIcon from "../assets/service bad.webp";
 import transportIcon from "../assets/transport.webp";
 import visaIcon from "../assets/visa.webp";
 import flightIcon from "../assets/flight.webp";
+import { Banner } from "../components/Banner";
+import bannerImage from "../assets/main-banner.jpg";
 
 const services = [
   {
@@ -11,7 +13,7 @@ const services = [
     text: "Get economy as well as star hotels including VIP/Luxury hotels at the best prices in the market.",
   },
   {
-    icon: transportIcon ,
+    icon: transportIcon,
     title: "Transport",
     text: "Vastest option of transport and transfer for the whole Umrah journey with extensive fleet.",
   },
@@ -29,6 +31,8 @@ const services = [
 const Umrah = () => {
   return (
     <main>
+      <Banner title="Umrah Package" backgroundImage={bannerImage} />
+
       <section className="umrah">
         <div className="container umrah__inner">
           <div className="umrah__content">

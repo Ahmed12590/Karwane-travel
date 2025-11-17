@@ -11,8 +11,6 @@ createRoot(document.getElementById('root')).render(
 )
 
 
-
-
 ////// favicon //////////////
 const link =
   document.querySelector('link[rel="icon"]') ||
