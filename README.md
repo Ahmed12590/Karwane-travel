@@ -13,4 +13,4 @@
 npm i
 npm run dev   # http://localhost:5173
 npm run build # production build
-npm run preview
+
